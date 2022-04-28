@@ -1,0 +1,102 @@
+body{font-family: 'Overpass', sans-serif;}
+
+.wrapp {
+    width: 330px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+    background-color:#242b35;
+    padding: 22px;
+}
+
+.border-radius img {
+    border-radius: 50%;
+    background-color: #30393f;
+    padding: 12px;
+}
+
+.boba li {
+    list-style-type: none;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #30393f;
+    float: left;
+    color:#777a7e;
+    width: 7%;
+    text-align: center;
+    font-weight: 700;
+}
+.boba {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 3px;
+}
+
+.boba li:hover {
+    color: white;
+    background-color: #677075;
+}
+
+.left {
+    margin-left: 22px;
+}
+
+.centered {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 8px;
+}
+.clearfix {
+    display: table;
+    clear: both;
+    content: "";
+}
+.submit {
+    width: 100%;
+    background-color: #fc7613;
+    color: white;
+    border-radius: 20px;
+    height: 35px;
+    position: relative;
+    top: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.submit:hover {
+    background-color: white;
+    color: 
+    #f8cba0;
+}
+
+.hilang {
+    display: none;
+}
+
+.thanks img {
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+.middle { 
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.middle p{
+    margin: auto;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 15px;
+    color: #fc7613;
+    background-color: #30393f;
+}
+
+.tengah {
+    text-align: center;
+}

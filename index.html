@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapp">
+        <div id="hilang1">
+                <div class="border-radius"><img src="./images/icon-star.svg"></div>
+            <div style="color: white; font-weight: 700;">
+                <h1>How did we do?</h1>
+            </div>
+            <div style="color: #777a7e; font-weight: 200; font-size: 14px;">
+                <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            </div>
+            <div class="boba">
+            
+                <li onclick="click1()" id="button-1">1</li>
+                <li onclick="click2()" id="button-2" class="left">2</li>
+                <li onclick="click3()" id="button-3" class="left">3</li>
+                <li onclick="click4()" id="button-4" class="left">4</li>
+                <li onclick="click5()" id="button-5" class="left">5</li>
+                <div class="clearfix"></div>
+            </div>
+            <div class="submit" onclick="clicked()"><div class="centered">SUBMIT</div></div>
+        </div>
+        <div class="hilang" id="tampil">
+            <div class="thanks">
+                <img src="./images/illustration-thank-you.svg">
+            </div>
+            <div class="middle">
+                <p>You selected <span id="score"></span> out of 5</p>
+            </div>
+            <br>
+            <div class="tengah" style="color: white; ">
+                <h1>Thank you!</h1>
+            </div>
+            <div class="tengah" style="color:#777a7e; font-size: 14px;">
+                We appreciate you taking the time to give a rating.If you ever need more support,don't hesitate to get in touch!
+            </div>
+        </div>
+    </div>
+</body>
+<script src="engine.js"></script>
+</html>
