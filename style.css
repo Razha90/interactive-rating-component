@@ -1,9 +1,15 @@
 body{font-family: 'Overpass', sans-serif;}
 
+.card {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .wrapp {
+    display: flex;
     width: 330px;
-    height: 300px;
-    margin: auto;
+    min-height: 50vh;
     border-radius: 10px;
     background-color:#242b35;
     padding: 22px;
@@ -15,25 +21,24 @@ body{font-family: 'Overpass', sans-serif;}
     padding: 12px;
 }
 
-.boba li {
-    list-style-type: none;
+.boba .regret {
     padding: 12px;
     border-radius: 50%;
     background-color: #30393f;
-    float: left;
     color:#777a7e;
     width: 7%;
     text-align: center;
     font-weight: 700;
+    transition: 0.5s;
 }
 .boba {
     width: 100%;
     height: auto;
-    position: relative;
-    top: 3px;
+    display: flex;
+  flex-wrap: nowrap;
 }
 
-.boba li:hover {
+.boba .regret:hover {
     color: white;
     background-color: #677075;
 }
@@ -48,14 +53,11 @@ body{font-family: 'Overpass', sans-serif;}
     text-align: center;
     padding: 8px;
 }
-.clearfix {
-    display: table;
-    clear: both;
-    content: "";
-}
+
 .submit {
     width: 100%;
     background-color: #fc7613;
+    border: 1px solid #fc7613;
     color: white;
     border-radius: 20px;
     height: 35px;
@@ -63,12 +65,13 @@ body{font-family: 'Overpass', sans-serif;}
     top: 25px;
     font-weight: 700;
     letter-spacing: 2px;
+    transition: 1s;
 }
 
 .submit:hover {
     background-color: white;
-    color: 
-    #f8cba0;
+    color: #f8cba0;
+    border: 1px solid white;
 }
 
 .hilang {

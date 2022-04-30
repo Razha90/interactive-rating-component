@@ -10,30 +10,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="wrapp">
-        <div id="hilang1">
-                <div class="border-radius"><img src="./images/icon-star.svg"></div>
-            <div style="color: white; font-weight: 700;">
-                <h1>How did we do?</h1>
+<body style="background-color:#141519; min-height: 100vh;">
+    <div class="card">
+    <main class="wrapp" role="main">
+        <div id="hilang1" role="heading">
+                <div class="border-radius"><img src="./images/icon-star.svg" alt="icon star image"></div>
+
+                <h1  style="color: white; font-weight: 700;">How did we do?</h1>     
+
+                <p  style="color: #777a7e; font-weight: 200; font-size: 14px;">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+            <div class="boba" role="checkbox">          
+                <div onclick="click1()" id="button-1" class="regret">1</div>
+                <div onclick="click2()" id="button-2" class="left regret">2</div>
+                <div onclick="click3()" id="button-3" class="left regret">3</div>
+                <div onclick="click4()" id="button-4" class="left regret">4</div>
+                <div onclick="click5()" id="button-5" class="left regret">5</div>
             </div>
-            <div style="color: #777a7e; font-weight: 200; font-size: 14px;">
-                <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-            </div>
-            <div class="boba">
-            
-                <li onclick="click1()" id="button-1">1</li>
-                <li onclick="click2()" id="button-2" class="left">2</li>
-                <li onclick="click3()" id="button-3" class="left">3</li>
-                <li onclick="click4()" id="button-4" class="left">4</li>
-                <li onclick="click5()" id="button-5" class="left">5</li>
-                <div class="clearfix"></div>
-            </div>
-            <div class="submit" onclick="clicked()"><div class="centered">SUBMIT</div></div>
+            <button class="submit" onclick="clicked()"><div class="centered">SUBMIT</div></button>
         </div>
-        <div class="hilang" id="tampil">
+        <div class="hilang" id="tampil" role="switch">
             <div class="thanks">
-                <img src="./images/illustration-thank-you.svg">
+                <img src="./images/illustration-thank-you.svg" alt="image for thanks" role="img">
             </div>
             <div class="middle">
                 <p>You selected <span id="score"></span> out of 5</p>
@@ -46,6 +44,7 @@
                 We appreciate you taking the time to give a rating.If you ever need more support,don't hesitate to get in touch!
             </div>
         </div>
+    </main>
     </div>
 </body>
 <script src="engine.js"></script>

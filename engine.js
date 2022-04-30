@@ -54,12 +54,10 @@ function click5() {
 }
 
 function clicked() {
-    document.getElementById('hilang1').style.display = 'none';
-    document.getElementById('tampil').style.display = "block";
     var get = 0;
     if (i == false) {
         get++;
-    }
+    } 
     if (o == false) {
         get++;
     }
@@ -72,5 +70,12 @@ function clicked() {
     if (r == false) {
         get++;
     }
+    if (get == 0) {
+        document.getElementById('hilang1').style.display = 'block';
+    document.getElementById('tampil').style.display = "none";
+    } else {
+        document.getElementById('hilang1').style.display = 'none';
+    document.getElementById('tampil').style.display = "block";
+    };
     document.getElementById('score').innerHTML = get;
 }
